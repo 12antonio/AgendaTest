@@ -130,5 +130,15 @@ public class AgendaDaoArrayList implements AgendaDao {
 <span class="nc" id="L130">    }</span>
     // }
 
+    @Override
+    public void anadirTrabajadorAEmpresa(ContactoEmpresa ce, ContactoPersona cp) {
+
+<span class="nc bnc" id="L136" title="All 2 branches missed.">        if (ce.getTrabajadores()==null)</span>
+<span class="nc" id="L137">            ce.setTrabajadores(new ArrayList&lt;ContactoPersona&gt;());</span>
+        
+<span class="nc" id="L139">        ce.getTrabajadores().add(cp);</span>
+
+<span class="nc" id="L141">    }</span>
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
